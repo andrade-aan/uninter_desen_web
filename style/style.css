@@ -2,40 +2,19 @@
 
 :root{
 
-    --color-background-page: #000;
+    --color-background-page: #000000;
     --color-background-hover: #aee9f6;
-   
-    --color-paragraph: #fff;
+    --color-text-contrast: #22d4fd;
+    --color-html: #ffa500;
+    --color-css: #328fe0;
+    --color-javascript: #ffff00;
+    --color-paragraph: #ffffff;
 }
 
 
 * {  /*reset CSS*/
     margin: 0;
     padding: 0;
-}
-
-.cabecalho{
-   
-    padding: 5% 2% 2% 5%
-}
-
-.cabecalho__link{
-    display: flex;
-    gap: 80px;
-}
-
-.cabecalho__link__menu{
-    display: flex;
-    font-family: 'Montserrat',sans-serif;
-    font-size: 30px;
-    color: var(--color-title);
-    text-decoration:none;
-}
-
-.cabecalho__link__menu:hover{
-    background-color: var(--color-background-hover);
-    color: var(--color-background-page);
-    border-radius: 16px;
 }
 
 body {
@@ -49,48 +28,70 @@ body {
     
 }
 
+
+.cabecalho{
+   
+    padding: 5% 2% 2% 5%
+}
+
+.cabecalho__link{
+    display: flex;
+    gap: 5rem;
+}
+
+.cabecalho__link__menu{
+    display: flex;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.9rem;
+    color: var(--color-title);
+    text-decoration:none;
+}
+
+.cabecalho__link__menu:hover{
+    background-color: var(--color-background-hover);
+    color: var(--color-background-page);
+    border-radius: 1rem;
+}
+
 .apresentacao {
     display: flex;          /*https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
     align-items: center;
     justify-content: space-between;
     /*margin:5%;*/
     padding: 5% 5%;
+    gap: 5rem;
  }
 
  .apresentacao__sec01{
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.9rem;
  }
 
  .apresentacao__sec01__titulo{
     font-family: 'Krona One', sans-serif;
-    font-size: 30px;
+    font-size: 1.8rem;
  }
 
  .apresentacao__sec01__paragrafo{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 1.7rem;
  }
-
-.titulodestaque {
-    color: var(--color-background-hover);
-}
 
 .apresentacao__links{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .apresentacao__links__subtitulo{
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 1.7rem;
 }
 
 .apresentacao__links__botoes{
@@ -104,9 +105,9 @@ body {
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     color: var(--color-paragraph);
-    font-size: 25px;
-    width: 300px;
-    border-radius: 16px;
+    font-size: 1.7rem;
+    width: 50%;
+    border-radius: 1rem;
     padding: 5px 0;
     text-decoration: none;
 }
@@ -120,14 +121,55 @@ body {
     align-self: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 15px;
-    padding: 10px;
+    font-size: 1rem;
+    padding: 0.7rem;
     text-align: center;
     background-color: var(--color-background-hover);
 }
 
-.img_logo {
+.imagem_logo {
     opacity: 0.3;
     border-radius: 50%;
-    width: 70%;
+    width: 60%;
+  }
+
+  .contrast__html {
+    
+    color: var(--color-html);
+  }
+
+  .contrast__css {
+    color: var(--color-css)
+  }
+
+  .contrast__javascript {
+    color: var(--color-javascript);
+  }
+
+  .apresentacao__images {
+
+    width: 90%;
+  }
+
+  @media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 15%;
+    }
+
+    .cabecalho__link{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+        
+    }
+
+    .apresentacao__sec01{
+        width: auto;
+    }
+
+    
   }
