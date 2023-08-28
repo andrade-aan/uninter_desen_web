@@ -1,0 +1,57 @@
+
+
+:root{
+
+    --color-background-page: #000000;
+    --color-background-hover: #aee9f6;
+    --color-text-contrast: #22d4fd;
+    --color-html: #ffa500;
+    --color-css: #328fe0;
+    --color-javascript: #ffff00;
+    --color-paragraph: #ffffff;
+}
+
+
+.cabecalho__about {
+    padding: 5% 2% 2% 5%;
+    height: 20vh;
+    display: flex;
+    grid-template-rows: 100%;
+   
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.9rem;
+}
+
+
+.nav__menu ul li{
+    
+    float: left;
+    display: inline-block;
+    justify-content: center;
+    height: 3rem;
+    line-height: 2.5rem;
+    width: 14rem;
+    text-align: left;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.9rem;
+ }
+
+ .cabecalho__link__about {
+    color: var(--color-paragraph)
+}
+
+ .nav__menu ul ul{
+    display: none;
+ }
+
+
+.nav__menu ul li:hover > ul{
+    display: block;
+}
+
+.cabecalho__link__about:hover {
+    color: var(--color-background-page);
+    background-color: var(--color-background-hover);
+    border-radius: 10px;
+    font-size: 130%;
+}

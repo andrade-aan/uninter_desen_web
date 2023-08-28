@@ -17,6 +17,13 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-paragraph);
+    
+}
+
+
 body {
     
     /*height: 100vh;*/
@@ -25,9 +32,9 @@ body {
     color: var(--color-paragraph);
     background-image: url("../images/wallpaperbetter.jpg");
     background-repeat: no-repeat;
+    text-decoration: none;
     
 }
-
 
 .cabecalho{
    
@@ -125,6 +132,7 @@ body {
     padding: 0.7rem;
     text-align: center;
     background-color: var(--color-background-hover);
+    color: var(--color-css);
 }
 
 .imagem_logo {
